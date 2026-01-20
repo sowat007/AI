@@ -9,6 +9,7 @@ export interface Message {
   text: string;
   timestamp: Date;
   sources?: { title: string; uri: string }[];
+  audioData?: Uint8Array; // Store audio bytes for replaying
 }
 
 export interface LegalTopic {
